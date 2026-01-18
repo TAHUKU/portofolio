@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkull Qoull | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3EHQ%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Modern portfolio of Hakkull Qoull - Junior Backend Developer" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200 dark:border-slate-800 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-lg">Hakkull<span class="text-blue-500">.dev</span></h1>
+    <button onclick="toggleDark()" class="px-3 py-1 rounded-md border border-slate-300 dark:border-slate-700 text-sm">
+      🌙 / ☀️
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="min-h-screen flex items-center justify-center text-center px-4">
+  <div>
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Junior Backend Developer</h2>
+    <p class="text-lg opacity-80 max-w-xl mx-auto">Building backend systems with Python, Flask, and Linux environment.</p>
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="https://github.com/TAHUKU" target="_blank" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700">GitHub</a>
+      <a href="#projects" class="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-xl">Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="max-w-5xl mx-auto px-6 py-24">
+  <h3 class="text-3xl font-bold mb-6">About Me</h3>
+  <p class="leading-relaxed opacity-90">
+    Saya adalah developer pemula dengan fokus backend development menggunakan Python.
+    Terbiasa membangun aplikasi dengan pola MVC, database, dan workflow Git di Linux.
+  </p>
+</section>
+
+<!-- Skills -->
+<section class="bg-slate-100 dark:bg-slate-800 py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-8">Tech Stack</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">Python</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">Flask</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">SQLite</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">MySQL</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">HTML</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">Tailwind CSS</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">Git & GitHub</span>
+      <span class="px-4 py-2 bg-white dark:bg-slate-900 rounded-full shadow">Linux</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="max-w-5xl mx-auto px-6 py-24">
+  <h3 class="text-3xl font-bold mb-10">Projects</h3>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- Project Card -->
+    <div class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow hover:shadow-xl transition">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="font-semibold text-xl">CRUD Application</h4>
+        <span class="text-xs px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-700">Backend</span>
+      </div>
+      <p class="opacity-80 mb-4">Python CRUD app dengan struktur MVC dan database SQLite.</p>
+      <ul class="text-sm opacity-80 mb-4 list-disc list-inside">
+        <li>Controller • Model • View</li>
+        <li>Validasi input & modular</li>
+        <li>SQLite database</li>
+      </ul>
+      <div class="flex gap-3">
+        <a href="https://github.com/TAHUKU/CRUD-" target="_blank" class="px-4 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700">View Repo</a>
+        <span class="px-4 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 opacity-70">CLI App</span>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow hover:shadow-xl transition">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="font-semibold text-xl">To-Do List Web App</h4>
+        <span class="text-xs px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-700">Flask</span>
+      </div>
+      <p class="opacity-80 mb-4">Aplikasi manajemen tugas berbasis Flask dengan autentikasi.</p>
+      <ul class="text-sm opacity-80 mb-4 list-disc list-inside">
+        <li>Login & Register</li>
+        <li>Status task</li>
+        <li>Dashboard user</li>
+      </ul>
+      <div class="flex gap-3">
+        <a href="https://github.com/TAHUKU" target="_blank" class="px-4 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700">View Repo</a>
+        <span class="px-4 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 opacity-70">On Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-10 text-center opacity-70">
+  © 2026 Hakkull Qoull • Built with Tailwind CSS
+</footer>
+
+<script>
+  function toggleDark() {
+    document.documentElement.classList.toggle('dark');
+  }
+</script>
+
+</body>
+</html>
