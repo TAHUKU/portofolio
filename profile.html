@@ -4,117 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile | Hakkull Qoull</title>
-  
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3EHQ%3C/text%3E%3C/svg%3E" />
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white'%3EHQ%3C/text%3E%3C/svg%3E">
+
   <meta name="description" content="Modern portfolio of Hakkull Qoull - Junior Backend Developer" />
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' }
-  </script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
 
-  <!-- External CSS -->
   <link rel="stylesheet" href="assets/css/profile.css" />
 </head>
 
-<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors">
 
-  <!-- Navbar -->
-  <nav class="fixed w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200 dark:border-slate-800 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="font-bold text-lg">
-        Hakkull<span class="text-blue-500">.dev</span>
-      </h1>
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200 dark:border-slate-800 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-lg">
+      Hakkull<span class="text-blue-500">.dev</span>
+    </h1>
 
-      <div class="flex items-center gap-4">
-        <a href="index.html" class="text-sm hover:text-blue-500">Home</a>
-        <button onclick="toggleDark()" class="px-3 py-1 rounded-md border border-slate-300 dark:border-slate-700 text-sm">🌙 / ☀️</button>
-      </div>
+    <div class="flex items-center gap-4 text-sm">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <button onclick="toggleDark()" class="px-3 py-1 rounded-md border">
+        🌙 / ☀️
+      </button>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Profile Section -->
-  <section class="pt-32 pb-24 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-extrabold mb-6">Profile</h1>
+<!-- PROFILE -->
+<section class="pt-28 pb-24 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-extrabold mb-6">Profile</h1>
 
-      <div class="grid md:grid-cols-3 gap-10 items-start">
-        <!-- Photo -->
-        <div class="flex justify-center md:justify-start">
-          <div class="w-40 h-40 rounded-full bg-slate-300 dark:bg-slate-700 flex items-center justify-center text-4xl font-bold">
-            hakkul
-          </div>
-        </div>
-
-        <!-- Bio -->
-        <div class="md:col-span-2">
-          <p class="opacity-90 mb-6 leading-relaxed">
-            Saya adalah <b>Junior Backend Developer</b> dengan fokus pada pengembangan aplikasi menggunakan Python dan Flask.
-            Terbiasa bekerja dengan database relasional, struktur MVC, serta environment Linux, dan saya masi kuliah dengan
-            masuk ke jurusan IT (Teknik Informatika)
-          </p>
-
-          <ul class="space-y-2">
-            <li><b>Nama :</b> Hakkull Qoull</li>
-            <li><b>Studying:</b> Universitas Yudharta Pasuruan</li>
-            <li><b>Major:</b> Informatic Engginering</li>
-            <li><b>Role:</b> Junior Backend Developer</li>
-            <li><b>Stack:</b> Python, Flask, SQLite, MySQL</li>
-            <li><b>Tools:</b> Git, GitHub, Linux</li>
-            <li><b>Fokus:</b> Backend System & API</li>
-          </ul>
+    <div class="grid md:grid-cols-3 gap-10 items-start">
+      <div class="flex justify-center md:justify-start">
+        <div class="w-40 h-40 rounded-full bg-slate-300 dark:bg-slate-700
+                    flex items-center justify-center text-xl font-bold">
+          H Q
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Career Goal -->
-  <section class="bg-slate-100 dark:bg-slate-800 py-20 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Career Goal</h2>
-      <p class="opacity-90 leading-relaxed">
-        Target saya adalah menjadi Backend Developer yang siap kerja, mampu membangun sistem backend yang rapi,
-        scalable, dan aman, serta berkontribusi dalam tim profesional.
-      </p>
-    </div>
-  </section>
+      <div class="md:col-span-2">
+        <p class="opacity-90 mb-6 leading-relaxed">
+          Saya adalah <b>Junior Backend Developer</b> dengan fokus pada
+          pengembangan aplikasi menggunakan Python dan Flask.
+          Terbiasa dengan database relasional, MVC, Git, dan Linux.
+        </p>
 
-  <!-- Contact -->
-  <section class="py-20 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
-
-      <div class="grid sm:grid-cols-2 gap-6">
-        <a href="mailto:hakkullqoull@gmail.com" class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 transition">
-          <p class="text-sm opacity-70">Email</p>
-          <p class="font-semibold">hakkullqoull@gmail.com</p>
-        </a>
-
-        <a href="https://wa.me/6281515344063" target="_blank" class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-green-500 transition">
-          <p class="text-sm opacity-70">WhatsApp</p>
-          <p class="font-semibold">Chat via WhatsApp</p>
-        </a>
-
-        <a href="https://github.com/TAHUKU"_blank" class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-500 transition">
-          <p class="text-sm opacity-70">GitHub</p>
-          <p class="font-semibold">github.com/TAHUKU</p>
-        </a>
-
-        <a href="#" class="p-5 rounded-xl border border-slate-200 dark:border-slate-700">
-          <p class="text-sm opacity-70">Status</p>
-          <p class="font-semibold text-blue-500">Open for Junior Backend Role</p>
-        </a>
+        <ul class="space-y-2 text-sm">
+          <li><b>Nama:</b> Hakkull Qoull</li>
+          <li><b>Studying:</b> Universitas Yudharta Pasuruan</li>
+          <li><b>Major:</b> Informatics Engineering</li>
+          <li><b>Role:</b> Junior Backend Developer</li>
+          <li><b>Stack:</b> Python, Flask, SQLite, MySQL</li>
+          <li><b>Tools:</b> Git, GitHub, Linux</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="py-10 text-center opacity-70">
-    © 2026 Hakkull Qoull
-  </footer>
+<!-- CAREER -->
+<section class="bg-slate-100 dark:bg-slate-800 py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Career Goal</h2>
+    <p class="opacity-90 leading-relaxed">
+      Menjadi Backend Developer profesional yang mampu membangun
+      sistem backend yang scalable, aman, dan rapi.
+    </p>
+  </div>
+</section>
 
-  <!-- External JS -->
-  <script src="assets/js/profil.js"></script>
+<!-- CONTACT -->
+<section class="py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+      <a href="mailto:hakkullqoull@gmail.com"
+         class="p-5 rounded-xl border hover:border-blue-500 transition">
+        <p class="text-sm opacity-70">Email</p>
+        <p class="font-semibold">hakkullqoull@gmail.com</p>
+      </a>
+
+      <a href="https://wa.me/6281515344063" target="_blank"
+         class="p-5 rounded-xl border hover:border-green-500 transition">
+        <p class="text-sm opacity-70">WhatsApp</p>
+        <p class="font-semibold">Chat via WhatsApp</p>
+      </a>
+
+      <a href="https://github.com/TAHUKU" target="_blank"
+         class="p-5 rounded-xl border hover:border-slate-500 transition">
+        <p class="text-sm opacity-70">GitHub</p>
+        <p class="font-semibold">github.com/TAHUKU</p>
+      </a>
+
+      <div class="p-5 rounded-xl border">
+        <p class="text-sm opacity-70">Status</p>
+        <p class="font-semibold text-blue-500">
+          Open for Junior Backend Role
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-10 text-center opacity-70">
+  © 2026 Hakkull Qoull
+</footer>
+
+<!-- DARK MODE -->
+<script>
+  function toggleDark() {
+    document.documentElement.classList.toggle('dark')
+  }
+</script>
+
 </body>
 </html>

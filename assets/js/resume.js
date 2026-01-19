@@ -2,13 +2,13 @@ function toggleDark() {
   document.documentElement.classList.toggle('dark')
 }
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   document.body.classList.add("page-enter")
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("page-enter")
   
-//   requestAnimationFrame(() => {
-//     document.body.classList.add("page-enter-active")
-//   })
-// })
+  requestAnimationFrame(() => {
+    document.body.classList.add("page-enter-active")
+  })
+})
 
 document.querySelectorAll("a").forEach(link => {
   if (link.hostname === window.location.hostname) {
@@ -24,3 +24,10 @@ document.querySelectorAll("a").forEach(link => {
     })
   }
 })
+
+
+
+  function toggleSidebar() {
+    document.getElementById('sidebar')
+      .classList.toggle('-translate-x-full')
+  }

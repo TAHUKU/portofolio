@@ -47,3 +47,8 @@ document.querySelectorAll("a").forEach(link => {
     });
   }
 });
+
+  function toggleSidebar() {
+    document.getElementById('sidebar')
+      .classList.toggle('-translate-x-full')
+  }

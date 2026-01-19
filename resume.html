@@ -2,37 +2,59 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Resume | Hakkull Qoull</title>
 
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3EHQ%3C/text%3E%3C/svg%3E" />
-  <meta name="description" content="Modern portfolio of Hakkull Qoull - Junior Backend Developer" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white'%3EHQ%3C/text%3E%3C/svg%3E">
 
-  <link rel="stylesheet" href="assets/css/resume.css" />
+  <meta name="description" content="Modern portfolio of Hakkull Qoull - Junior Backend Developer">
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class' }</script>
+
+  <link rel="stylesheet" href="assets/css/resume.css">
 </head>
 
 <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
 
 <div class="flex min-h-screen">
 
-  <!-- SIDEBAR (SAMA DENGAN INDEX) -->
-  <aside class="w-64 bg-white dark:bg-slate-800 border-r fixed h-full hidden md:block">
+  <!-- SIDEBAR -->
+  <aside id="sidebar"
+    class="fixed md:static inset-y-0 left-0 w-64
+           bg-white dark:bg-slate-800
+           border-r border-slate-200 dark:border-slate-700
+           transform -translate-x-full md:translate-x-0
+           transition-transform duration-300
+           z-50">
+
     <div class="p-6 font-bold text-xl">
       Hakkull<span class="text-blue-500">.dev</span>
     </div>
-     <!-- <button onclick="toggleDark()" class="px-3 py-1 rounded-md border border-slate-300 dark:border-slate-700 text-sm">🌙 / ☀️</button> -->
 
     <nav class="px-6 space-y-4 text-sm">
-      <a href="index.html" class="nav-link">🏠 Dashboard</a>
-      <a href="profile.html" class="nav-link">👤 Profile</a>
-      <a href="resume.html" class="nav-link active">📄 Resume</a>
+      <a href="index.html" onclick="toggleSidebar()" class="nav-link">🏠 Dashboard</a>
+      <a href="profile.html" onclick="toggleSidebar()" class="nav-link">👤 Profile</a>
+      <a href="resume.html" onclick="toggleSidebar()" class="nav-link active">📄 Resume</a>
     </nav>
   </aside>
 
   <!-- MAIN -->
-  <main class="flex-1 md:ml-64 px-6 py-10 space-y-16">
+  <main class="flex-1 md:ml-64 px-4 sm:px-6 py-6 sm:py-10 space-y-16">
+
+    <!-- MOBILE HEADER -->
+    <div class="md:hidden flex items-center justify-between mb-6">
+      <h1 class="font-bold text-lg">
+        Hakkull<span class="text-blue-500">.dev</span>
+      </h1>
+      <button onclick="toggleSidebar()" class="p-2 rounded-lg border">
+        ☰
+      </button>
+    </div>
 
     <!-- HEADER -->
     <section>
@@ -66,7 +88,6 @@
     <!-- EXPERIENCE -->
     <section class="card">
       <h2 class="section-title">Experience</h2>
-
       <div class="border-l-2 border-blue-500 pl-4 space-y-6">
         <div>
           <h3 class="font-semibold">Personal Projects</h3>
@@ -84,7 +105,7 @@
     <section class="card">
       <h2 class="section-title">Contact</h2>
       <div class="space-y-2 text-sm">
-        <p>📧 <a href="hakkullqoull@gmail.com" class="text-blue-500"></a>hakkullqoull@gmail.com </p>
+        <p>📧 hakkullqoull@gmail.com</p>
         <p>💬 <a href="https://wa.me/6281515344063" class="text-green-500">WhatsApp</a></p>
         <p>💻 <a href="https://github.com/TAHUKU" class="text-blue-500">GitHub</a></p>
       </div>
@@ -93,6 +114,14 @@
   </main>
 </div>
 
-<script src="assets/js/dashboard.js"></script>
+<!-- SIDEBAR TOGGLE -->
+<script>
+  function toggleSidebar() {
+    document
+      .getElementById('sidebar')
+      .classList.toggle('-translate-x-full')
+  }
+</script>
+
 </body>
 </html>
