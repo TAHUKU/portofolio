@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 0;
+  opacity: 0.8;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  opacity: 1;
+  color: #3b82f6;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.dark .card {
+  background: #0f172a;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background: #f1f5f9;
+}
+
+.dark .badge {
+  background: #020617;
+}
