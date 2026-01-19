@@ -48,7 +48,10 @@ document.querySelectorAll("a").forEach(link => {
   }
 });
 
+
   function toggleSidebar() {
-    document.getElementById('sidebar')
-      .classList.toggle('-translate-x-full')
-  }
+  const sidebar = document.getElementById("sidebar");
+
+  sidebar.classList.toggle("-translate-x-full");
+  sidebar.classList.toggle("pointer-events-none");
+}
