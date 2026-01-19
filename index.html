@@ -22,16 +22,14 @@
 <div class="flex min-h-screen">
 
   <!-- SIDEBAR -->
-<aside id="sidebar"
-  class="fixed md:static inset-y-0 left-0 w-64
-         bg-white dark:bg-slate-800
-         border-r border-slate-200 dark:border-slate-700
-         transform -translate-x-full md:translate-x-0
-         transition-transform duration-300
-         z-40
-         pointer-events-none md:pointer-events-auto">
-
-
+  <aside id="sidebar"
+    class="fixed md:static inset-y-0 left-0 w-64
+           bg-white dark:bg-slate-800
+           border-r border-slate-200 dark:border-slate-700
+           transform -translate-x-full md:translate-x-0
+           transition-transform duration-300
+           z-50
+           pointer-events-none md:pointer-events-auto">
     <div class="p-6 font-bold text-xl">
       Hakkull<span class="text-blue-500">.dev</span>
     </div>
@@ -40,8 +38,6 @@
       <a href="index.html" class="nav-link block">🏠 Dashboard</a>
       <a href="profile.html" class="nav-link block">👤 Profile</a>
       <a href="resume.html" class="nav-link block">📄 Resume</a>
-      <!-- <a href="#projects" class="nav-link block">💻 Projects</a>
-      <a href="#contact" class="nav-link block">📱 Contact</a> -->
 
       <button onclick="toggleDark()" class="mt-6 w-full border px-3 py-2 rounded-md">
         🌙 / ☀️
@@ -49,21 +45,21 @@
     </nav>
   </aside>
 
+  <!-- OVERLAY MOBILE -->
+  <div id="overlay"
+       class="fixed inset-0 bg-black/30 z-40 hidden md:hidden"
+       onclick="toggleSidebar()"></div>
+
   <!-- MAIN CONTENT -->
-  <!-- <main class="flex-1 md:ml-64 px-6 py-10"> -->
-    <main class="flex-1 md:ml-64 px-4 sm:px-6 py-6 sm:py-10">
+  <main class="flex-1 md:ml-64 px-4 sm:px-6 py-6 sm:py-10">
 
     <!-- MOBILE HEADER -->
-<div class="md:hidden flex items-center justify-between mb-6">
-  <h1 class="font-bold text-lg">Hakkull<span class="text-blue-500">.dev</span></h1>
-
- <button onclick="toggleSidebar()"
-  class="p-2 rounded-lg border z-50 relative">
-  ☰
-</button>
-
-</div>
-
+    <div class="md:hidden flex items-center justify-between mb-6">
+      <h1 class="font-bold text-lg">Hakkull<span class="text-blue-500">.dev</span></h1>
+      <button onclick="toggleSidebar()" class="p-2 rounded-lg border z-50 relative">
+        ☰
+      </button>
+    </div>
 
     <!-- DASHBOARD -->
     <section id="dashboard">
@@ -71,9 +67,7 @@
       <p class="opacity-70 mb-8">Welcome back, Hakkull 👋</p>
 
       <!-- STATS -->
-      <!-- <div class="grid md:grid-cols-3 gap-6 mb-12"> -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
         <div class="card p-6 bg-white dark:bg-slate-800 rounded-xl shadow">
           <h3 class="text-sm opacity-70">Projects</h3>
           <p class="text-3xl font-bold">5+</p>
@@ -129,7 +123,20 @@
   </main>
 </div>
 
-<script src="assets/js/main.js"></script>
-</body>
+<script>
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
 
+  function toggleSidebar() {
+    sidebar.classList.toggle("-translate-x-full");
+    sidebar.classList.toggle("pointer-events-none");
+    overlay.classList.toggle("hidden");
+  }
+
+  function toggleDark() {
+    document.documentElement.classList.toggle("dark");
+  }
+</script>
+
+</body>
 </html>
