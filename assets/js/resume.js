@@ -101,7 +101,7 @@ const resumeContent = `<!-- Resume Section -->
                             <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider">2022 — Sekarang</span>
                         </div>
                         <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">
-                            S1 Teknik Informatika — Fokus pada pengembangan perangkat lunak dan algoritma.
+                           Mahasiswa S1 Teknik Informatika — Fokus pada pengembangan perangkat lunak dan algoritma.
                         </p>
                     </div>
                 </div>
