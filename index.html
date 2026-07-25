@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hakkull Qoull — Backend Developer | Python</title>
+  <title>Hakkull Qoull — junior web dev | Python</title>
+
 
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial'%3EHQ%3C/text%3E%3C/svg%3E" />
@@ -103,37 +104,37 @@
     <!-- ========== HEADER / NAVBAR ========== -->
     <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-[#020617]/70 border-b border-slate-200/50 dark:border-slate-800/50 transition-all duration-300" id="navbar">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-between h-14 sm:h-16">
           <!-- Logo -->
-          <a href="#" onclick="switchPage('dashboard'); return false;" class="flex items-center gap-2.5 group">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-sm font-black shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all group-hover:scale-105">
+          <a href="#" onclick="switchPage('dashboard'); return false;" class="flex items-center gap-2 group">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all group-hover:scale-105">
               H
             </div>
-            <span class="font-bold text-lg tracking-tight">Hakkull<span class="text-blue-500">.dev</span></span>
+            <span class="font-bold text-base sm:text-lg tracking-tight">Hakkul<span class="text-blue-500">.dev</span></span>
           </a>
 
           <!-- Desktop Nav -->
           <nav class="hidden md:flex items-center gap-1">
-            <button onclick="switchPage('dashboard')" class="nav-link px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="dashboard">
+            <button onclick="switchPage('dashboard')" class="nav-link px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="dashboard">
               <i class="fas fa-home mr-1.5"></i>Dashboard
             </button>
-            <button onclick="switchPage('projects')" class="nav-link px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="projects">
+            <button onclick="switchPage('projects')" class="nav-link px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="projects">
               <i class="fas fa-code mr-1.5"></i>Projects
             </button>
-            <button onclick="switchPage('profile')" class="nav-link px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="profile">
+            <button onclick="switchPage('profile')" class="nav-link px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="profile">
               <i class="fas fa-user mr-1.5"></i>Profile
             </button>
-            <button onclick="switchPage('resume')" class="nav-link px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="resume">
+            <button onclick="switchPage('resume')" class="nav-link px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200" data-page="resume">
               <i class="fas fa-file-alt mr-1.5"></i>Resume
             </button>
           </nav>
 
           <!-- Right Actions -->
           <div class="flex items-center gap-2">
-            <button id="themeToggle" class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-all" title="Toggle theme">
+            <button id="themeToggle" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-all" title="Toggle theme">
               <span id="themeIcon" class="block">🌙</span>
             </button>
-            <button id="mobileToggle" class="md:hidden w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+            <button id="mobileToggle" class="md:hidden w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
               <i class="fas fa-bars"></i>
             </button>
           </div>
@@ -160,7 +161,7 @@
     </header>
 
     <!-- ========== MAIN CONTENT ========== -->
-    <main class="flex-1 pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+    <main class="flex-1 pt-16 sm:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto" id="pageContainer">
         <!-- Content will be dynamically loaded here -->
       </div>
@@ -168,13 +169,13 @@
 
     <!-- ========== FOOTER ========== -->
     <footer class="relative z-10 border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#020617]/50 backdrop-blur-xl">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
           <div class="flex items-center gap-2 text-sm text-slate-500">
             <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-[10px] font-black">
               H
             </div>
-            <span>© 2026 Hakkull Qoull — Backend Developer</span>
+            <span>© 2026 Hakkul Qoul Informatics Engineering</span>
           </div>
           <div class="flex items-center gap-4">
             <a href="https://github.com/TAHUKU" target="_blank" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">

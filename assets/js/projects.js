@@ -1,0 +1,107 @@
+// Projects page content
+const projectsContent = `<!-- Projects Section -->
+<div class="py-8 md:py-12">
+    <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-3">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Proyek</span>
+        </h1>
+        <p class="text-slate-500 dark:text-slate-400 text-lg">Kumpulan proyek Python desktop.</p>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+
+        <!-- Project 1: Finger Detector -->
+        <div class="project-card" data-category="python">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <div class="project-thumb bg-gradient-to-br from-blue-500/10 to-indigo-500/10 dark:from-blue-500/5 dark:to-indigo-500/5">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/20">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="project-tag tag-backend">Python</span>
+                            <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Finger Detector</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Deteksi jari tangan secara real-time menggunakan kamera dengan antarmuka desktop Python.</p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="https://github.com/TAHUKU/finger-detector.git" target="_blank" class="text-xs font-bold hover:text-blue-500 transition-colors flex items-center gap-1.5">
+                                <i class="fab fa-github"></i> Repo
+                            </a>
+                            <span class="text-slate-300 dark:text-slate-700">|</span>
+                            <span class="text-xs text-slate-400 italic flex items-center gap-1">
+                                <i class="fas fa-desktop"></i> Desktop App
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Visual Paint -->
+        <div class="project-card" data-category="python">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <div class="project-thumb bg-gradient-to-br from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/5 dark:to-teal-500/5">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/20">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="project-tag tag-frontend">Python</span>
+                            <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Visual Paint</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Aplikasi melukis digital dengan deteksi gerakan tangan menggunakan kamera.</p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="https://github.com/TAHUKU/visual-paint.git" target="_blank" class="text-xs font-bold hover:text-blue-500 transition-colors flex items-center gap-1.5">
+                                <i class="fab fa-github"></i> Repo
+                            </a>
+                            <span class="text-slate-300 dark:text-slate-700">|</span>
+                            <span class="text-xs text-slate-400 italic flex items-center gap-1">
+                                <i class="fas fa-desktop"></i> Desktop App
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Finger Blur -->
+        <div class="project-card" data-category="python">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <div class="project-thumb bg-gradient-to-br from-purple-500/10 to-pink-500/10 dark:from-purple-500/5 dark:to-pink-500/5">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-purple-500/20">
+                            <i class="fas fa-smog"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="project-tag tag-storage">Python</span>
+                            <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Finger Blur</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Aplikasi blur wajah real-time dengan deteksi berbasis kamera.</p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <a href="#" class="text-xs font-bold text-slate-400 cursor-not-allowed flex items-center gap-1.5" title="Segera hadir">
+                                <i class="fab fa-github"></i> Coming Soon
+                            </a>
+                            <span class="text-slate-300 dark:text-slate-700">|</span>
+                            <span class="text-xs text-slate-400 italic flex items-center gap-1">
+                                <i class="fas fa-desktop"></i> Desktop App
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>`;
+
+export default projectsContent;
