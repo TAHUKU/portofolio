@@ -1,14 +1,14 @@
 // Profile page content
 const profileContent = `<!-- Profile Section -->
 <div class="py-8 md:py-12">
-    <div class="mb-12">
-        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-3">
+    <div class="mb-8 sm:mb-12">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 sm:mb-3">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Profil</span>
         </h1>
-        <p class="text-slate-500 dark:text-slate-400 text-lg">Tentang saya, latar belakang, dan keahlian teknis.</p>
+        <p class="text-slate-500 dark:text-slate-400 text-sm sm:text-base">Tentang saya, latar belakang, dan keahlian teknis.</p>
     </div>
 
-    <div class="grid lg:grid-cols-3 gap-12 items-start mb-16">
+    <div class="grid lg:grid-cols-3 gap-8 sm:gap-12 items-start mb-12 sm:mb-16">
         <!-- Profile Photo -->
         <div class="flex justify-center lg:justify-start">
             <div class="relative">
@@ -31,10 +31,10 @@ const profileContent = `<!-- Profile Section -->
         </div>
 
         <!-- Profile Info -->
-        <div class="lg:col-span-2 space-y-6">
+        <div class="lg:col-span-2 space-y-5 sm:space-y-6">
             <div>
-                <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                    Saya adalah Mahasiswa <span class="text-blue-500 font-bold">Teknik Informatika</span> yang bersemangat dalam membangun logika server yang efisien. Berfokus pada Python untuk menciptakan solusi yang handal. Terbiasa dengan environment Linux dan version control menggunakan Git & GitHub.
+                <p class="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
+                    Saya adalah Mahasiswa <span class="text-blue-500 font-bold">Teknik Informatika</span> yang bersemangat dalam mempelajari dan mengembangkan solusi berbasis teknologi. Berfokus pada Python untuk menciptakan berbagai proyek inovatif. Terbiasa dengan environment Linux dan version control menggunakan Git & GitHub.
                 </p>
             </div>
 
@@ -64,7 +64,7 @@ const profileContent = `<!-- Profile Section -->
     </div>
 
     <!-- Skills Section -->
-    <section class="mb-16">
+    <section class="mb-12 sm:mb-16">
         <h2 class="section-title">
             <i class="fas fa-cogs text-blue-500"></i> Tech Stack & Tools
         </h2>
@@ -113,25 +113,25 @@ const profileContent = `<!-- Profile Section -->
     </section>
 
     <!-- Goals & Contact -->
-    <div class="grid md:grid-cols-2 gap-6 mb-16">
-        <div class="p-8 rounded-2xl bg-gradient-to-br from-blue-500/5 to-indigo-500/5 dark:from-blue-500/10 dark:to-indigo-500/10 border border-blue-200/50 dark:border-blue-800/50">
-            <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-500">
+    <div class="grid md:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+        <div class="p-5 sm:p-7 lg:p-8 rounded-2xl bg-gradient-to-br from-blue-500/5 to-indigo-500/5 dark:from-blue-500/10 dark:to-indigo-500/10 border border-blue-200/50 dark:border-blue-800/50">
+            <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-500 text-sm sm:text-base">
                     <i class="fas fa-bullseye"></i>
                 </div>
-                <h2 class="text-xl font-bold">Tujuan Karir</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Tujuan Karir</h2>
             </div>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Menjadi lulusan Teknik Informatika yang handal dalam membangun aplikasi backend menggunakan Python, serta berkontribusi pada proyek-proyek open-source dan kolaborasi tim untuk menciptakan solusi inovatif.
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                Menjadi lulusan Teknik Informatika yang handal dalam membangun aplikasi yang inovatif menggunakan Python, serta berkontribusi pada proyek-proyek open-source dan kolaborasi tim untuk menciptakan solusi yang bermanfaat.
             </p>
         </div>
 
-        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-            <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-500">
+        <div class="p-5 sm:p-7 lg:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+            <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-500 text-sm sm:text-base">
                     <i class="fas fa-address-card"></i>
                 </div>
-                <h2 class="text-xl font-bold">Hubungi Saya</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Hubungi Saya</h2>
             </div>
             <div class="grid grid-cols-2 gap-3">
                 <a href="mailto:hakkullqoull@gmail.com" class="contact-btn hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-500 group">

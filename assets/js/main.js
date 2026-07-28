@@ -147,11 +147,11 @@
     if (!typingText) return;
 
     const words = [
-      'scalable APIs.',
-      'clean MVC backends.',
-      'efisien databases.',
-      'aplikasi desktop.',
-      'computer vision.'
+      'algoritma & struktur data.',
+      'pemrograman Python.',
+      'computer vision.',
+      'pengembangan perangkat lunak.',
+      'dasar jaringan & keamanan.'
     ];
 
     let wordIndex = 0;
@@ -386,7 +386,7 @@
   // CONSOLE EASTER EGG
   // ==============================================================
   console.log('%c🚀 Hakkull.dev', 'font-size: 24px; font-weight: bold; color: #2563eb;');
-  console.log('%cBackend Developer | Python Enthusiast', 'font-size: 14px; color: #64748b;');
+  console.log('%cMahasiswa Teknik Informatika | Python Enthusiast', 'font-size: 14px; color: #64748b;');
   console.log('%c🔧 Built with vanilla JS, Tailwind CSS & lots of ☕', 'font-size: 12px; color: #94a3b8;');
 
 })();

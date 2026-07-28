@@ -1,26 +1,26 @@
 // Projects page content
 const projectsContent = `<!-- Projects Section -->
 <div class="py-8 md:py-12">
-    <div class="mb-12">
-        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-3">
+    <div class="mb-8 sm:mb-12">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 sm:mb-3">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Proyek</span>
         </h1>
-        <p class="text-slate-500 dark:text-slate-400 text-lg">Kumpulan proyek Python desktop.</p>
+        <p class="text-slate-500 dark:text-slate-400 text-sm sm:text-base">Kumpulan proyek Python desktop.</p>
     </div>
 
     <!-- Project Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="projectsGrid">
 
         <!-- Project 1: Finger Detector -->
         <div class="project-card" data-category="python">
             <div class="project-card-inner">
                 <div class="project-card-front">
                     <div class="project-thumb bg-gradient-to-br from-blue-500/10 to-indigo-500/10 dark:from-blue-500/5 dark:to-indigo-500/5">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/20">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-lg sm:text-2xl shadow-lg shadow-blue-500/20">
                             <i class="fas fa-hand-pointer"></i>
                         </div>
                     </div>
-                    <div class="p-5">
+                    <div class="p-4 sm:p-5">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="project-tag tag-backend">Python</span>
                             <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
@@ -46,11 +46,11 @@ const projectsContent = `<!-- Projects Section -->
             <div class="project-card-inner">
                 <div class="project-card-front">
                     <div class="project-thumb bg-gradient-to-br from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/5 dark:to-teal-500/5">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/20">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-lg sm:text-2xl shadow-lg shadow-emerald-500/20">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                     </div>
-                    <div class="p-5">
+                    <div class="p-4 sm:p-5">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="project-tag tag-frontend">Python</span>
                             <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
@@ -76,11 +76,11 @@ const projectsContent = `<!-- Projects Section -->
             <div class="project-card-inner">
                 <div class="project-card-front">
                     <div class="project-thumb bg-gradient-to-br from-purple-500/10 to-pink-500/10 dark:from-purple-500/5 dark:to-pink-500/5">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-purple-500/20">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-lg sm:text-2xl shadow-lg shadow-purple-500/20">
                             <i class="fas fa-smog"></i>
                         </div>
                     </div>
-                    <div class="p-5">
+                    <div class="p-4 sm:p-5">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="project-tag tag-storage">Python</span>
                             <span class="text-[10px] font-mono text-slate-400">Desktop App</span>
