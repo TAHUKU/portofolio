@@ -360,6 +360,27 @@ body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* ===== CV PAGE ===== */
+.cv-project-card {
+  animation: cvCardIn 0.6s ease-out both;
+}
+.cv-project-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.cv-project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes cvCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ===== LOADING DOTS ===== */
 .dots span {
   animation: dotPulse 1.4s infinite;

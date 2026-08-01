@@ -304,7 +304,7 @@ if (backToTop) {
 // ================================================================
 function getInitialPage() {
   const hash = window.location.hash.replace('#', '');
-  const validPages = ['dashboard', 'projects', 'profile', 'resume'];
+  const validPages = ['dashboard', 'projects', 'profile', 'resume', 'cv'];
   if (hash && validPages.includes(hash)) return hash;
   return 'dashboard';
 }
